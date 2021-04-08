@@ -1,14 +1,20 @@
-// import App from "next/app";
-import type { AppProps /*, AppContext */ } from 'next/app'
+import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import { ThemeProvider } from 'styled-components'
 
 import GlobalStyles from 'styles/global'
+import darkTheme from 'styles/themes/dark'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <ThemeProvider theme={darkTheme}>
       <Head>
-        <title>NextJS - Boilerplate</title>
+        <title>Andrey Oliveira</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="favicon.ico" type="image/x-icon" />
         <meta
@@ -18,7 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   )
 }
 
