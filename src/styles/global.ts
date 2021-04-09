@@ -55,7 +55,7 @@ const GlobalStyles = createGlobalStyle`
     h2 {
       line-height: calc(${(props) => props.theme.fontSize.medium} * 1.8);
     }
-    h3 {
+    h1 {
       line-height: calc(${(props) => props.theme.fontSize.large} * 1.8);
     }
   }
