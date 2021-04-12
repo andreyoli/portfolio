@@ -1,10 +1,10 @@
-import SectionTitle from 'components/SectionTitle'
+import ArticleTitle from 'components/ArticleTitle'
 import * as Style from './styles'
 
 const About = () => {
 	return (
 		<Style.Container>
-			<SectionTitle>Sobre mim</SectionTitle>
+			<ArticleTitle>Sobre mim</ArticleTitle>
 			<Style.Paragraph data-testid="section-body">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
 				scelerisque bibendum euismod. Fusce eget malesuada arcu. Vivamus
