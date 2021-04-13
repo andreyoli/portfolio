@@ -24,6 +24,7 @@ const BasicInfo = () => {
 				<p>Front-end Developer</p>
 				<Style.SocialMediaWrapper>
 					<a
+						aria-label="linkedin"
 						href="https://www.linkedin.com/in/andreyoli/"
 						target="_blank"
 						rel="noreferrer"
@@ -32,6 +33,7 @@ const BasicInfo = () => {
 						<Linkedin size={25} />
 					</a>
 					<a
+						aria-label="twitter"
 						href="https://twitter.com/dreysub"
 						target="_blank"
 						rel="noreferrer"
@@ -40,6 +42,7 @@ const BasicInfo = () => {
 						<Twitter size={25} />
 					</a>
 					<a
+						aria-label="instagram"
 						href="https://www.instagram.com/dreysub/"
 						target="_blank"
 						rel="noreferrer"
@@ -48,6 +51,7 @@ const BasicInfo = () => {
 						<Instagram size={25} />
 					</a>
 					<a
+						aria-label="github"
 						href="https://github.com/andreyoli"
 						target="_blank"
 						rel="noreferrer"
