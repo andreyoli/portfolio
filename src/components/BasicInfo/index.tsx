@@ -14,12 +14,14 @@ const BasicInfo = () => {
 	return (
 		<Style.Container>
 			<Style.ProfileWrapper>
-				<Image
-					src="/perfil.png"
-					alt="Foto de perfil"
-					width={180}
-					height={180}
-				/>
+				<Style.ImageWrapper>
+					<Image
+						src="/perfil.png"
+						alt="Foto de perfil"
+						layout="fill"
+						objectFit="cover"
+					/>
+				</Style.ImageWrapper>
 				<h2>Andrey Oliveira</h2>
 				<p>Front-end Developer</p>
 				<Style.SocialMediaWrapper>

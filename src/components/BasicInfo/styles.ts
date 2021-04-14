@@ -23,16 +23,35 @@ export const Container = styled.header`
 	}
 `
 
+export const ImageWrapper = styled.div`
+	width: 180px;
+	height: 180px;
+	position: relative;
+	animation: shimmer 4s infinite linear;
+	background: linear-gradient(to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
+	background-size: 500px 100%;
+	border-radius: 50%;
+
+	img {
+		border-radius: 50%;
+	}
+
+	@keyframes shimmer {
+		0% {
+			background-position: -1000px 0;
+		}
+		100% {
+			background-position: 1000px 0;
+		}
+	}
+`
+
 export const ProfileWrapper = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
 	flex-direction: column;
-
-	img {
-		border-radius: 50%;
-	}
 
 	h2 {
 		margin-top: 15px;
