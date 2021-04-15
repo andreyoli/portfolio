@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Add } from '@styled-icons/material'
+import { ExternalLink } from '@styled-icons/feather'
 
 import * as Style from './styles'
 
@@ -10,9 +10,13 @@ type ProjectThumbProps = {
 
 const ProjectThumb = ({ projectUrl, projectSrc }: ProjectThumbProps) => {
 	return (
-		<Style.LinkAsContainer href={projectUrl} aria-label="Link do Projeto">
+		<Style.LinkAsContainer
+			href={projectUrl}
+			target="_blank"
+			aria-label="Link do Projeto"
+		>
 			<Style.Blur></Style.Blur>
-			<Add size={35} />
+			<ExternalLink size={35} />
 			<Image
 				src={projectSrc || '/placeholder.png'}
 				alt="Imagem do projeto"

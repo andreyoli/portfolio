@@ -19,6 +19,7 @@ export const LinkAsContainer = styled.a`
 		z-index: 2;
 		opacity: 0;
 		transition: 0.8s;
+		stroke: ${(props) => props.theme.colors.text};
 	}
 
 	:hover {
