@@ -16,7 +16,7 @@ const BasicInfo = () => {
 			<Style.ProfileWrapper>
 				<Style.ImageWrapper>
 					<Image
-						src="/perfil.png"
+						src="/placeholder.png"
 						alt="Foto de perfil"
 						layout="fill"
 						objectFit="cover"
