@@ -14,7 +14,7 @@ export default {
 	breakpoints: {
 		mobileS: '320px',
 		mobileM: '375px',
-		mobileL: '425px',
+		mobileL: '500px',
 		tablet: '768px',
 		desktop: '1024px'
 	}
