@@ -13,6 +13,10 @@ export const Wrapper = styled.main`
 export const BodyContainer = styled.section`
 	padding-left: ${(props) => props.theme.marginSize.medium};
 
+	article {
+		margin-bottom: ${(props) => props.theme.marginSize.large};
+	}
+
 	@media (max-width: ${(props) => props.theme.breakpoints.mobileL}) {
 		padding: 0;
 		padding-top: ${(props) => props.theme.marginSize.large};
