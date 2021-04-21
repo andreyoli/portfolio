@@ -8,7 +8,9 @@ const Projects = () => {
 		<Style.Container>
 			<ArticleTitle>Projetos</ArticleTitle>
 			<Style.Gallery data-testid="gallery">
-				<ProjectThumb projectUrl="https://google.com" />
+				<ProjectThumb projectUrl="https://uanimelist.andreyoliveira.com.br" />
+				<ProjectThumb projectUrl="https://mytrips.andreyoliveira.com.br" />
+				<ProjectThumb projectUrl="https://moveit.andreyoliveira.com.br" />
 			</Style.Gallery>
 		</Style.Container>
 	)

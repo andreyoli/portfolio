@@ -5,10 +5,9 @@ import * as Style from './styles'
 
 type ProjectThumbProps = {
 	projectUrl: string
-	projectSrc?: string
 }
 
-const ProjectThumb = ({ projectUrl, projectSrc }: ProjectThumbProps) => {
+const ProjectThumb = ({ projectUrl }: ProjectThumbProps) => {
 	return (
 		<Style.LinkAsContainer
 			href={projectUrl}
@@ -18,7 +17,11 @@ const ProjectThumb = ({ projectUrl, projectSrc }: ProjectThumbProps) => {
 			<Style.Blur></Style.Blur>
 			<ExternalLink size={35} />
 			<Image
-				src={projectSrc || '/placeholder.png'}
+				src={
+					!process.env.AWS_REGION
+						? `http://localhost:3000/api/thumbnail?url=${projectUrl}`
+						: `https://www.andreyoliveira.com.br/api/thumbnail?url=${projectUrl}`
+				}
 				alt="Imagem do projeto"
 				width={150}
 				height={150}
